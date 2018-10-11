@@ -9,21 +9,17 @@ $ npm install bearychat-hob
 # Hello Hob
 
 ```js
-const Hob = require('hob');
-const app = new Hob('pass your token here');
+const Hob = require('bearychat-hob');
 
-app.use(ctx => {
+(async () => {
+  const app = new Hob('pass your token here');
 
-});
+  app.use(ctx => {
+    if (ctx.status.isMentioned) {
+      ctx.reply.text = 'hello world!';
+    }
+  });
 
-app.start();
+  await app.start();
+})();
 ```
-
-ctx {
-  message;
-  status;
-  reply;
-
-  rtm;
-  http;
-}
