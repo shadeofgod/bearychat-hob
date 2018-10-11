@@ -1,0 +1,21 @@
+{
+  "name": "bearychat-hob",
+  "version": "0.1.0",
+  "description": "elegant hubot framework for bearychat",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shadeofgod <zoubingwu@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bearychat": "^1.2.0",
+    "bearychat-rtm-client": "^0.8.0",
+    "chalk": "^2.4.1",
+    "ora": "^3.0.0",
+    "semver": "^5.5.1",
+    "ws": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=7.6.0"
+  }
+}
